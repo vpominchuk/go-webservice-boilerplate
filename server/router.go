@@ -1,8 +1,8 @@
 package server
 
 import (
-	"makeup/analytics/config"
-	"makeup/analytics/controllers"
+	"webservice/config"
+	"webservice/controllers"
 
 	"github.com/gin-gonic/gin"
 )
@@ -16,7 +16,9 @@ func Router() *gin.Engine {
 
 	router := gin.Default()
 
-	router.GET("/status", new(controllers.HealthController).Status)
+	healthController := new(controllers.HealthController)
+
+	router.GET("/status", healthController.Status)
 
 	return router
 }

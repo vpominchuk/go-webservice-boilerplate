@@ -1,8 +1,8 @@
 package config
 
 import (
-	"makeup/analytics/logger"
 	"os"
+	"webservice/logger"
 
 	"github.com/Valgard/godotenv"
 )

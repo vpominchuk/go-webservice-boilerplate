@@ -1,8 +1,8 @@
 package main
 
 import (
-	"makeup/analytics/config"
-	"makeup/analytics/server"
+	"webservice/config"
+	"webservice/server"
 )
 
 func main() {
