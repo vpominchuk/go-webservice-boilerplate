@@ -29,3 +29,7 @@ func Init() {
 		}
 	}
 }
+
+func IsProduction() bool {
+	return os.Getenv("ENVIRONMENT") == "release"
+}
